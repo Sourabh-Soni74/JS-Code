@@ -1,0 +1,14 @@
+let Data = ["A","B",10,20,30,"C","D",40]
+
+var Alpha = Data.filter(ele => typeof ele == 'string');
+var Num = []
+for(let i=0;i<Data.length;i++){
+    if(typeof Data[i] == 'string' ){
+       Alpha.push(Data[i]);
+    }
+    else if(typeof Data[i]=='number'){
+        Num.push(Data[i]);
+    }
+}
+console.log(Alpha);
+console.log(Num);
