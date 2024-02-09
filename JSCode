@@ -12,3 +12,7 @@ for(let i=0;i<Data.length;i++){
 }
 console.log(Alpha);
 console.log(Num);
+
+// other way
+var Alpha2 = Data.filter(ele=> typeof ele =='string');
+var Num2 = Data.filter(ele=> typeof ele =='number');
